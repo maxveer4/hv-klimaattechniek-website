@@ -98,18 +98,24 @@
       <nav class="flex flex-col px-4 py-4 text-base font-medium text-[#1a1a1a]">
         <a href="index.html" class="py-3 border-b border-gray-100 hover:text-[#3EB3E5] transition-colors">Home</a>
         <a href="over-ons.html" class="py-3 border-b border-gray-100 hover:text-[#3EB3E5] transition-colors">Over</a>
-        <div class="py-3 border-b border-gray-100">
-          <p class="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Diensten</p>
-          <div class="flex flex-col gap-2.5 pl-1">
+        <div class="border-b border-gray-100">
+          <button type="button" class="mobile-accordion-toggle w-full flex items-center justify-between py-3 text-left" data-target="mobile-diensten-panel">
+            <span class="text-xs font-semibold uppercase tracking-wide text-gray-400">Diensten</span>
+            <svg class="h-4 w-4 text-gray-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div id="mobile-diensten-panel" class="hidden gap-2.5 pl-1 pb-3">
             <a href="airco-installatie.html" class="hover:text-[#3EB3E5] transition-colors">Airco Installatie</a>
             <a href="airco-onderhoud.html" class="hover:text-[#3EB3E5] transition-colors">Airco Onderhoud</a>
             <a href="airco-reparatie-storing.html" class="hover:text-[#3EB3E5] transition-colors">Airco Reparatie &amp; Storing</a>
             <a href="cv-ketel-onderhoud.html" class="hover:text-[#3EB3E5] transition-colors">CV-ketel Onderhoud</a>
           </div>
         </div>
-        <div class="py-3 border-b border-gray-100">
-          <p class="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Werkgebied</p>
-          <div class="flex flex-col gap-2.5 pl-1">
+        <div class="border-b border-gray-100">
+          <button type="button" class="mobile-accordion-toggle w-full flex items-center justify-between py-3 text-left" data-target="mobile-werkgebied-panel">
+            <span class="text-xs font-semibold uppercase tracking-wide text-gray-400">Werkgebied</span>
+            <svg class="h-4 w-4 text-gray-400 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div id="mobile-werkgebied-panel" class="hidden gap-2.5 pl-1 pb-3">
             <a href="varik.html" class="hover:text-[#3EB3E5] transition-colors">Varik</a>
             <a href="tiel.html" class="hover:text-[#3EB3E5] transition-colors">Tiel</a>
             <a href="geldermalsen.html" class="hover:text-[#3EB3E5] transition-colors">Geldermalsen</a>
@@ -312,7 +318,7 @@
   <!-- =============================== -->
   <!-- MOBILE STICKY CTA -->
   <!-- =============================== -->
-  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#1a1a1a] border-t border-white/10 px-3 py-3 flex items-center gap-2" style="padding-bottom: max(0.75rem, env(safe-area-inset-bottom));">
+  <div id="sticky-cta" class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#1a1a1a] border-t border-white/10 px-3 py-3 flex items-center gap-2 translate-y-full transition-transform duration-300" style="padding-bottom: max(0.75rem, env(safe-area-inset-bottom));">
     <a href="tel:0628625542" class="flex-1 flex items-center justify-center gap-2 border border-white/20 text-white text-sm font-semibold py-3 rounded-lg">
       <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       Bellen
@@ -326,6 +332,36 @@
   </div>
 
   <script>
+    const stickyCta = document.getElementById('sticky-cta');
+    if (stickyCta) {
+      const toggleStickyCta = () => {
+        if (window.scrollY > 400) {
+          stickyCta.classList.remove('translate-y-full');
+        } else {
+          stickyCta.classList.add('translate-y-full');
+        }
+      };
+      window.addEventListener('scroll', toggleStickyCta, { passive: true });
+      toggleStickyCta();
+    }
+
+    document.querySelectorAll('.mobile-accordion-toggle').forEach((btn) => {
+      const panel = document.getElementById(btn.getAttribute('data-target'));
+      const chevron = btn.querySelector('svg');
+      btn.addEventListener('click', () => {
+        const isOpen = !panel.classList.contains('hidden');
+        if (isOpen) {
+          panel.classList.add('hidden');
+          panel.classList.remove('flex', 'flex-col');
+          chevron.classList.remove('rotate-180');
+        } else {
+          panel.classList.remove('hidden');
+          panel.classList.add('flex', 'flex-col');
+          chevron.classList.add('rotate-180');
+        }
+      });
+    });
+
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const iconOpen = document.getElementById('menu-icon-open');

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airco Specialist in Varik | HV Klimaattechniek</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, .font-heading { font-family: 'Inter', sans-serif; }
+</style>
+</head>
+<body class="bg-white pb-20 lg:pb-0">
+
+  <!-- Topbar -->
+  <div class="bg-[#1a1a1a] text-white text-xs md:text-sm">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-2 flex items-center justify-between">
+      <div class="hidden sm:flex items-center gap-1">
+        <span class="text-amber-400 tracking-tight">★★★★★</span>
+        <span class="ml-1 opacity-90">Beoordeeld met een 5.0</span>
+      </div>
+      <div class="flex w-full sm:w-auto items-center justify-between sm:justify-start gap-3 sm:gap-6">
+        <a href="tel:0628625542" class="flex items-center gap-2 hover:text-[#3EB3E5] transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          06 28 62 55 42
+        </a>
+        <a href="mailto:info@hvklimaattechniek.nl" class="flex items-center gap-2 hover:text-[#3EB3E5] transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          info@hvklimaattechniek.nl
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo.jpeg" alt="HV Klimaattechniek" class="h-10 md:h-10 w-auto max-w-[140px] md:max-w-[160px] object-contain">
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-[#1a1a1a]">
+        <a href="index.html" class="hover:text-[#3EB3E5] transition-colors">Home</a>
+        <a href="over-ons.html" class="hover:text-[#3EB3E5] transition-colors">Over</a>
+        <div class="relative group">
+          <button type="button" class="flex items-center gap-1 hover:text-[#3EB3E5] transition-colors">
+            Diensten
+            <svg class="h-4 w-4 transition-transform group-hover:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="absolute left-0 top-full pt-3 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-150 z-50">
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 py-2 w-64">
+              <a href="airco-installatie.html" class="block px-4 py-2.5 text-sm text-[#1a1a1a] hover:bg-gray-50 hover:text-[#3EB3E5] transition-colors">Airco Installatie</a>
+              <a href="airco-onderhoud.html" class="block px-4 py-2.5 text-sm text-[#1a1a1a] hover:bg-gray-50 hover:text-[#3EB3E5] transition-colors">Airco Onderhoud</a>
+              <a href="airco-reparatie-storing.html" class="block px-4 py-2.5 text-sm text-[#1a1a1a] hover:bg-gray-50 hover:text-[#3EB3E5] transition-colors">Airco Reparatie &amp; Storing</a>
+              <a href="cv-ketel-onderhoud.html" class="block px-4 py-2.5 text-sm text-[#1a1a1a] hover:bg-gray-50 hover:text-[#3EB3E5] transition-colors">CV-ketel Onderhoud</a>
+            </div>
+          </div>
+        </div>
+        <div class="relative group">
+          <button type="button" class="flex items-center gap-1 hover:text-[#3EB3E5] transition-colors">
+            Werkgebied
+            <svg class="h-4 w-4 transition-transform group-hover:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="absolute left-0 top-full pt-3 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-150 z-50">
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 py-2 w-56">
+              <a href="varik.html" class="block px-4 py-2.5 text-sm text-[#1a1a1a] hover:bg-gray-50 hover:text-[#3EB3E5] transition-colors">Varik</a>
+              <a href="tiel.html" class="block px-4 py-2.5 text-sm text-[#1a1a1a] hover:bg-gray-50 hover:text-[#3EB3E5] transition-colors">Tiel</a>
+              <a href="geldermalsen.html" class="block px-4 py-2.5 text-sm text-[#1a1a1a] hover:bg-gray-50 hover:text-[#3EB3E5] transition-colors">Geldermalsen</a>
+              <a href="culemborg.html" class="block px-4 py-2.5 text-sm text-[#1a1a1a] hover:bg-gray-50 hover:text-[#3EB3E5] transition-colors">Culemborg</a>
+              <a href="zaltbommel.html" class="block px-4 py-2.5 text-sm text-[#1a1a1a] hover:bg-gray-50 hover:text-[#3EB3E5] transition-colors">Zaltbommel</a>
+              <a href="waardenburg.html" class="block px-4 py-2.5 text-sm text-[#1a1a1a] hover:bg-gray-50 hover:text-[#3EB3E5] transition-colors">Waardenburg</a>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="hover:text-[#3EB3E5] transition-colors">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden lg:inline-flex bg-[#3EB3E5] hover:bg-[#2f9fce] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors">
+        Offerte aanvragen
+      </a>
+
+      <!-- Mobile menu toggle -->
+      <button id="menu-btn" type="button" aria-label="Menu openen" aria-expanded="false" class="lg:hidden p-2 -mr-2 text-[#1a1a1a]">
+        <svg id="menu-icon-open" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="menu-icon-close" class="h-7 w-7 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu panel -->
+    <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-lg z-50">
+      <nav class="flex flex-col px-4 py-4 text-base font-medium text-[#1a1a1a]">
+        <a href="index.html" class="py-3 border-b border-gray-100 hover:text-[#3EB3E5] transition-colors">Home</a>
+        <a href="over-ons.html" class="py-3 border-b border-gray-100 hover:text-[#3EB3E5] transition-colors">Over</a>
+        <div class="py-3 border-b border-gray-100">
+          <p class="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Diensten</p>
+          <div class="flex flex-col gap-2.5 pl-1">
+            <a href="airco-installatie.html" class="hover:text-[#3EB3E5] transition-colors">Airco Installatie</a>
+            <a href="airco-onderhoud.html" class="hover:text-[#3EB3E5] transition-colors">Airco Onderhoud</a>
+            <a href="airco-reparatie-storing.html" class="hover:text-[#3EB3E5] transition-colors">Airco Reparatie &amp; Storing</a>
+            <a href="cv-ketel-onderhoud.html" class="hover:text-[#3EB3E5] transition-colors">CV-ketel Onderhoud</a>
+          </div>
+        </div>
+        <div class="py-3 border-b border-gray-100">
+          <p class="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-2">Werkgebied</p>
+          <div class="flex flex-col gap-2.5 pl-1">
+            <a href="varik.html" class="hover:text-[#3EB3E5] transition-colors">Varik</a>
+            <a href="tiel.html" class="hover:text-[#3EB3E5] transition-colors">Tiel</a>
+            <a href="geldermalsen.html" class="hover:text-[#3EB3E5] transition-colors">Geldermalsen</a>
+            <a href="culemborg.html" class="hover:text-[#3EB3E5] transition-colors">Culemborg</a>
+            <a href="zaltbommel.html" class="hover:text-[#3EB3E5] transition-colors">Zaltbommel</a>
+            <a href="waardenburg.html" class="hover:text-[#3EB3E5] transition-colors">Waardenburg</a>
+          </div>
+        </div>
+        <a href="contact.html" class="py-3 hover:text-[#3EB3E5] transition-colors">Contact</a>
+        <a href="tel:0628625542" class="mt-4 flex items-center justify-center gap-2 border border-gray-200 text-[#1a1a1a] font-semibold px-5 py-3 rounded-lg">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          06 28 62 55 42
+        </a>
+        <a href="#contact" class="mt-3 bg-[#3EB3E5] text-white font-semibold px-5 py-3 rounded-lg text-center">
+          Offerte aanvragen
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =============================== -->
+  <!-- HERO SECTION -->
+  <!-- =============================== -->
+  <section class="relative min-h-[420px] lg:min-h-[440px] flex items-end lg:items-center overflow-hidden">
+    <img src="assets/images/hero-airco.png" alt="Airco-installatie in Varik" class="absolute inset-0 h-full w-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-28 md:h-40 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 md:px-6 pt-16 md:pt-20 lg:pt-0 pb-16 md:pb-20 w-full">
+      <div class="text-white max-w-2xl">
+        <p class="text-sm text-white/70 mb-3">
+          <a href="index.html" class="hover:text-white transition-colors">Home</a>
+          <span class="mx-1.5">/</span>
+          <a href="index.html#werkgebied" class="hover:text-white transition-colors">Werkgebied</a>
+          <span class="mx-1.5">/</span>
+          <span class="text-white">Varik</span>
+        </p>
+        <h1 class="font-heading text-4xl md:text-5xl lg:text-[3.2rem] font-semibold leading-tight mb-5">
+          Airco specialist in Varik
+        </h1>
+        <p class="text-white/85 text-base md:text-lg max-w-xl mb-8 leading-relaxed">
+          HV Klimaattechniek is dé specialist voor airco installatie, onderhoud en reparatie in Varik en omgeving. Snel ter plaatse, met persoonlijk advies en vakkundige service.
+        </p>
+
+        <div class="flex flex-col lg:flex-row lg:flex-wrap gap-3">
+          <a href="#contact" class="w-full lg:w-auto flex items-center justify-center gap-2 bg-[#3EB3E5] hover:bg-[#2f9fce] text-white font-semibold px-6 py-3.5 lg:py-3 rounded-xl lg:rounded-lg transition-colors">
+            Offerte aanvragen
+            <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="tel:0628625542" class="lg:hidden w-full flex items-center justify-center gap-2 border border-white/70 hover:bg-white/10 text-white font-semibold px-6 py-3.5 rounded-xl transition-colors">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            06 28 62 55 42
+          </a>
+          <a href="#contact" class="hidden lg:flex items-center justify-center border border-white/70 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+            Plan een gratis adviesgesprek
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== -->
+  <!-- SECTION: Intro -->
+  <!-- =============================== -->
+  <section class="bg-white py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-4 md:px-6">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-4">
+        Airco- en CV-ketel specialist in <span class="text-[#3EB3E5]">Varik</span>
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        Woont of onderneemt u in Varik? Dan kunt u rekenen op HV Klimaattechniek voor de installatie, het onderhoud en de reparatie van uw airco, en voor onderhoud aan uw CV-ketel. Dankzij onze lokale aanwezigheid in de Betuwe zijn we snel bij u ter plaatse, met persoonlijk advies en vakkundige service.
+      </p>
+    </div>
+  </section>
+
+  <!-- =============================== -->
+  <!-- SECTION: Onze diensten in Varik -->
+  <!-- =============================== -->
+  <section class="bg-gray-50 py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <div class="max-w-2xl mb-12 md:mb-14">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="h-px w-8 bg-[#3EB3E5]"></span>
+          <span class="text-xs font-semibold tracking-widest text-[#3EB3E5] uppercase">Diensten</span>
+        </div>
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-4">
+          Onze diensten in <span class="text-[#3EB3E5]">Varik</span>
+        </h2>
+        <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+          Van een nieuwe installatie tot jaarlijks onderhoud of een spoedreparatie: dit zijn de diensten die wij aanbieden in Varik en omgeving.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+        <a href="airco-installatie.html" class="group block bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 md:p-8">
+          <div class="h-12 w-12 rounded-xl bg-[#3EB3E5]/10 flex items-center justify-center mb-5">
+            <svg class="h-6 w-6 text-[#3EB3E5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-[#1a1a1a] mb-2">Airco Installatie</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">Professionele plaatsing van uw nieuwe airco, volledig afgestemd op uw woning en wensen. Snel en netjes geïnstalleerd.</p>
+          <span class="inline-flex items-center gap-1 text-sm font-semibold text-[#3EB3E5] group-hover:text-[#2f9fce] transition-colors">
+            Meer weten
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a href="airco-onderhoud.html" class="group block bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 md:p-8">
+          <div class="h-12 w-12 rounded-xl bg-[#3EB3E5]/10 flex items-center justify-center mb-5">
+            <svg class="h-6 w-6 text-[#3EB3E5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-[#1a1a1a] mb-2">Airco Onderhoud</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">Regelmatig onderhoud houdt uw airco efficiënt en verlengt de levensduur, met een grondige check en reiniging.</p>
+          <span class="inline-flex items-center gap-1 text-sm font-semibold text-[#3EB3E5] group-hover:text-[#2f9fce] transition-colors">
+            Meer weten
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a href="airco-reparatie-storing.html" class="group block bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 md:p-8">
+          <div class="h-12 w-12 rounded-xl bg-[#3EB3E5]/10 flex items-center justify-center mb-5">
+            <svg class="h-6 w-6 text-[#3EB3E5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10.29 3.86-8.48 14.14A2 2 0 0 0 3.53 21h16.94a2 2 0 0 0 1.72-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-[#1a1a1a] mb-2">Airco Reparatie &amp; Storing</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">Storing of defect aan uw airco? Wij lossen het snel en vakkundig op, zodat u weer optimaal kunt koelen of verwarmen.</p>
+          <span class="inline-flex items-center gap-1 text-sm font-semibold text-[#3EB3E5] group-hover:text-[#2f9fce] transition-colors">
+            Meer weten
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a href="cv-ketel-onderhoud.html" class="group block bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 md:p-8">
+          <div class="h-12 w-12 rounded-xl bg-[#3EB3E5]/10 flex items-center justify-center mb-5">
+            <svg class="h-6 w-6 text-[#3EB3E5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-[#1a1a1a] mb-2">CV-ketel Onderhoud</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">Jaarlijks onderhoud aan uw CV-ketel voor een veilige werking, een lager energieverbruik en minder storingen.</p>
+          <span class="inline-flex items-center gap-1 text-sm font-semibold text-[#3EB3E5] group-hover:text-[#2f9fce] transition-colors">
+            Meer weten
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== -->
+  <!-- SECTION: Ook actief in de buurt -->
+  <!-- =============================== -->
+  <section class="bg-white py-20 md:py-28">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
+      <h2 class="font-heading text-2xl md:text-3xl font-bold text-[#1a1a1a] mb-4">
+        Ook actief in de buurt van <span class="text-[#3EB3E5]">Varik</span>
+      </h2>
+      <p class="text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto">
+        Naast Varik zijn wij actief in de hele Betuwe en omliggende plaatsen.
+      </p>
+      <div class="flex flex-wrap justify-center gap-2">
+        <a href="tiel.html" class="px-4 py-2 rounded-full border border-gray-200 text-sm font-medium text-[#1a1a1a] hover:border-[#3EB3E5] hover:text-[#3EB3E5] transition-colors">Tiel</a>
+        <a href="geldermalsen.html" class="px-4 py-2 rounded-full border border-gray-200 text-sm font-medium text-[#1a1a1a] hover:border-[#3EB3E5] hover:text-[#3EB3E5] transition-colors">Geldermalsen</a>
+        <a href="culemborg.html" class="px-4 py-2 rounded-full border border-gray-200 text-sm font-medium text-[#1a1a1a] hover:border-[#3EB3E5] hover:text-[#3EB3E5] transition-colors">Culemborg</a>
+        <a href="zaltbommel.html" class="px-4 py-2 rounded-full border border-gray-200 text-sm font-medium text-[#1a1a1a] hover:border-[#3EB3E5] hover:text-[#3EB3E5] transition-colors">Zaltbommel</a>
+        <a href="waardenburg.html" class="px-4 py-2 rounded-full border border-gray-200 text-sm font-medium text-[#1a1a1a] hover:border-[#3EB3E5] hover:text-[#3EB3E5] transition-colors">Waardenburg</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== -->
+  <!-- SECTION: Contact -->
+  <!-- =============================== -->
+  <section id="contact" class="bg-[#1a1a1a] py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+        <div class="text-white">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="h-px w-8 bg-[#3EB3E5]"></span>
+            <span class="text-xs font-semibold tracking-widest text-[#3EB3E5] uppercase">Contact</span>
+          </div>
+          <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">
+            Vraag uw gratis <span class="text-[#3EB3E5]">offerte</span> aan
+          </h2>
+          <p class="text-white/70 leading-relaxed mb-8 max-w-md">
+            Bel, app of vul het formulier in. We reageren meestal binnen één werkdag en denken graag vrijblijvend met u mee over de beste oplossing.
+          </p>
+
+          <div class="flex flex-wrap gap-3 mb-10">
+            <a href="tel:0628625542" class="inline-flex items-center gap-2 bg-[#3EB3E5] hover:bg-[#2f9fce] text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              06 28 62 55 42
+            </a>
+            <a href="https://wa.me/31628625542" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+
+          <div class="space-y-4 border-t border-white/10 pt-6">
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+                <svg class="h-4 w-4 text-[#3EB3E5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+              </div>
+              <div>
+                <p class="text-xs text-white/50">E-mail</p>
+                <p class="font-medium">info@hvklimaattechniek.nl</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center shrink-0">
+                <svg class="h-4 w-4 text-[#3EB3E5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <p class="text-xs text-white/50">Werkgebied</p>
+                <p class="font-medium">Varik, Tiel en de Betuwe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 md:p-8">
+          <form class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-[#1a1a1a] mb-1.5">Naam <span class="text-[#3EB3E5]">*</span></label>
+                <input type="text" placeholder="Uw naam" class="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3EB3E5]/40">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-[#1a1a1a] mb-1.5">Telefoon <span class="text-[#3EB3E5]">*</span></label>
+                <input type="tel" placeholder="06 ..." class="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3EB3E5]/40">
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-[#1a1a1a] mb-1.5">E-mail (optioneel)</label>
+              <input type="email" placeholder="naam@voorbeeld.nl" class="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3EB3E5]/40">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-[#1a1a1a] mb-1.5">Type dienst</label>
+              <select class="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-600 focus:outline-none focus:ring-2 focus:ring-[#3EB3E5]/40">
+                <option>Airco installatie</option>
+                <option>Airco onderhoud</option>
+                <option>Airco reparatie / storing</option>
+                <option>CV-ketel onderhoud</option>
+                <option>Anders</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-[#1a1a1a] mb-1.5">Bericht (optioneel)</label>
+              <textarea rows="3" placeholder="Vertel kort waar het om gaat." class="w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3EB3E5]/40 resize-none"></textarea>
+            </div>
+            <label class="flex items-start gap-2 text-xs text-gray-500">
+              <input type="checkbox" class="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#3EB3E5] focus:ring-[#3EB3E5]/40">
+              <span>Ik ga akkoord dat HV Klimaattechniek mijn gegevens gebruikt om contact met mij op te nemen.</span>
+            </label>
+            <button type="submit" class="w-full bg-[#3EB3E5] hover:bg-[#2f9fce] text-white font-semibold py-3 rounded-lg transition-colors">
+              Offerte aanvragen
+            </button>
+            <p class="text-center text-xs text-gray-400">We reageren meestal binnen één werkdag. Liever bellen? 06 28 62 55 42.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== -->
+  <!-- FOOTER -->
+  <!-- =============================== -->
+  <footer class="bg-[#1a1a1a] text-white/70 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12 border-b border-white/10">
+        <div>
+          <a href="index.html" class="inline-flex items-center gap-3 mb-4">
+            <img src="assets/images/logo.jpeg" alt="HV Klimaattechniek" class="h-10 w-auto object-contain">
+          </a>
+          <p class="text-sm leading-relaxed max-w-xs">Uw specialist in airco installatie, onderhoud en reparatie in de Betuwe en omgeving.</p>
+        </div>
+        <div>
+          <h3 class="font-heading font-semibold text-white mb-4">Diensten</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="airco-installatie.html" class="hover:text-[#3EB3E5] transition-colors">Airco installatie</a></li>
+            <li><a href="airco-onderhoud.html" class="hover:text-[#3EB3E5] transition-colors">Airco onderhoud</a></li>
+            <li><a href="airco-reparatie-storing.html" class="hover:text-[#3EB3E5] transition-colors">Airco reparatie / storing</a></li>
+            <li><a href="cv-ketel-onderhoud.html" class="hover:text-[#3EB3E5] transition-colors">CV-ketel onderhoud</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-heading font-semibold text-white mb-4">Werkgebied</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="varik.html" class="hover:text-[#3EB3E5] transition-colors">Varik</a></li>
+            <li><a href="tiel.html" class="hover:text-[#3EB3E5] transition-colors">Tiel</a></li>
+            <li><a href="geldermalsen.html" class="hover:text-[#3EB3E5] transition-colors">Geldermalsen</a></li>
+            <li><a href="culemborg.html" class="hover:text-[#3EB3E5] transition-colors">Culemborg</a></li>
+            <li><a href="zaltbommel.html" class="hover:text-[#3EB3E5] transition-colors">Zaltbommel</a></li>
+            <li><a href="waardenburg.html" class="hover:text-[#3EB3E5] transition-colors">Waardenburg</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-heading font-semibold text-white mb-4">Contact</h3>
+          <ul class="space-y-2 text-sm">
+            <li class="font-medium text-white">HV Klimaattechniek</li>
+            <li>Dr. Dm. V. Londenstraat 44</li>
+            <li>4064 EM Varik</li>
+            <li class="pt-2"><a href="tel:0628625542" class="hover:text-[#3EB3E5] transition-colors">06 28 62 55 42</a></li>
+            <li><a href="mailto:info@hvklimaattechniek.nl" class="hover:text-[#3EB3E5] transition-colors">info@hvklimaattechniek.nl</a></li>
+            <li class="pt-2 text-white/50 text-xs">KvK: 89400712</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-6 text-xs text-white/50 text-center sm:text-left">
+        © 2026 HV Klimaattechniek. Alle rechten voorbehouden.
+      </div>
+    </div>
+  </footer>
+
+  <!-- =============================== -->
+  <!-- MOBILE STICKY CTA -->
+  <!-- =============================== -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#1a1a1a] border-t border-white/10 px-3 py-3 flex items-center gap-2" style="padding-bottom: max(0.75rem, env(safe-area-inset-bottom));">
+    <a href="tel:0628625542" class="flex-1 flex items-center justify-center gap-2 border border-white/20 text-white text-sm font-semibold py-3 rounded-lg">
+      <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Bellen
+    </a>
+    <a href="https://wa.me/31628625542" target="_blank" rel="noopener" class="shrink-0 h-11 w-11 flex items-center justify-center bg-[#25D366] rounded-lg" aria-label="WhatsApp">
+      <svg class="h-5 w-5 text-white" viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.086 3 3.5 8.586 3.5 15.5c0 2.35.65 4.55 1.78 6.43L3 29l7.24-2.24c1.8 1 3.87 1.57 6.06 1.57h.01c6.91 0 12.5-5.59 12.5-12.5S22.911 3 16.001 3zm0 22.6c-1.94 0-3.75-.53-5.3-1.46l-.38-.22-4.3 1.33 1.36-4.19-.25-.4a10.14 10.14 0 0 1-1.56-5.46c0-5.6 4.55-10.15 10.16-10.15s10.16 4.55 10.16 10.16-4.56 10.39-10.19 10.39zm5.57-7.62c-.3-.15-1.79-.88-2.07-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.18-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.64-.93-2.24-.24-.58-.49-.5-.68-.51h-.58c-.2 0-.53.08-.81.38s-1.06 1.04-1.06 2.53 1.09 2.93 1.24 3.13c.15.2 2.15 3.28 5.21 4.6.73.31 1.3.5 1.74.64.73.23 1.4.2 1.93.12.59-.09 1.79-.73 2.04-1.44.25-.7.25-1.31.18-1.44-.07-.13-.27-.2-.57-.35z"/></svg>
+    </a>
+    <a href="#contact" class="flex-[1.3] flex items-center justify-center gap-2 bg-[#3EB3E5] active:bg-[#2f9fce] text-white text-sm font-semibold py-3 rounded-lg">
+      Offerte aanvragen
+    </a>
+  </div>
+
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
+
+    menuBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  </script>
+</body>
+</html>
